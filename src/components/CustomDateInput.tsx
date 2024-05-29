@@ -12,7 +12,7 @@ const CustomDateInput: React.FC<CustomDateInputProps> = ({ value, onClick }) => 
       value={value}
       onClick={onClick}
       readOnly
-      placeholder="Deadline"
+      placeholder="期限"
     />
   );
 };
