@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# ToDoアプリ
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React,TypeScriptがどういったものなのか知るために、ChatGPT4oを用いて作成しました。
+制作期間は1日です。
 
-## Available Scripts
+## 概要
 
-In the project directory, you can run:
+このプロジェクトは、ReactとTypeScriptを使用して作成されたToDoアプリケーションです。
+Chakra UIを使用してデザインされており、ローカルストレージを用いてデータを保持します。
 
-### `npm start`
+## 技術スタック
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **フロントエンド**:
+  - [React](https://reactjs.org/)
+  - [TypeScript](https://www.typescriptlang.org/)
+  - [Chakra UI](https://chakra-ui.com/)
+  - [React DatePicker](https://reactdatepicker.com/)
+- **状態管理**:
+  - React Hooks (useState, useEffect)
+- **データ保存**:
+  - LocalStorage
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **src/**:
+  - **components/**:
+    - `AddTodoForm.tsx`: タスク追加フォームのコンポーネント。
+    - `CustomDateInput.tsx`: カスタム日付入力コンポーネント。
+    - `Filter.tsx`: フィルタリングコンポーネント。
+    - `Sort.tsx`: ソートコンポーネント。
+    - `TodoItem.tsx`: ToDoリストアイテムのコンポーネント。
+  - `App.tsx`: メインのアプリケーションコンポーネント。
+  - `index.tsx`: Reactアプリケーションのエントリーポイント。
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1.タスクを入力し、期限を設定して「追加」ボタンをクリック。
+2.タスクの完了状態を変更するには、チェックボックスをクリック。
+3.タスクを編集するには、「編集」ボタンをクリックし、必要な変更を行って「保存」ボタンをクリック。
+4.タスクを削除するには、「削除」ボタンをクリック。
+5.フィルタリングオプションを使用して、全てのタスク、未完了のタスク、完了済みのタスクを切り替えできる。
+6.ソートオプションを使用して、期限または作成日でタスクを並び替えることができる。
