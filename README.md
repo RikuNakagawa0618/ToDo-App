@@ -1,7 +1,6 @@
 # ToDoアプリ
 
 React,TypeScriptがどういったものなのか知るために、ChatGPT4oを用いて作成しました。
-制作期間は1日です。
 
 ## 概要
 
